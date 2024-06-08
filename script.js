@@ -1,9 +1,9 @@
 const cityName = 'Malappuram';
-const apiKey = 'd5552b78b4454ef2b9b0c22ce7c3688d';
+
 const apiUrl  =`https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${apiKey}`
 
 function fetchWeatherDataByCityName(cityName) {
-    const apiKey =  'd5552b78b4454ef2b9b0c22ce7c3688d'; 
+    
     const apiUrl  =`https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${apiKey}`
     fetch(apiUrl)
       .then(response => {
@@ -23,7 +23,7 @@ function fetchWeatherDataByCityName(cityName) {
 }
   
   function fetchWeatherData(latitude, longitude) {
-    const apiKey = 'd5552b78b4454ef2b9b0c22ce7c3688d'; 
+    
     const apiUrl = `https://api.weatherbit.io/v2.0/current?lat=${latitude}&lon=${longitude}&key=${apiKey}`
     fetch(apiUrl)
       .then(response => {
